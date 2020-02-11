@@ -1,0 +1,23 @@
+{
+  "name": "brain-games",
+  "version": "0.0.1",
+  "description": "hexlet project",
+  "main": "src/index.js",
+  "bin": {
+    "brain-games": "brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanvovk/backend-project-lvl1.git"
+  },
+  "author": "Yan Vovk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanvovk/backend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/yanvovk/backend-project-lvl1#readme"
+}
