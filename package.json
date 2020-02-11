@@ -6,9 +6,6 @@
   "bin": {
     "brain-games": "brain-games.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "type": "module",
   "repository": {
     "type": "git",
