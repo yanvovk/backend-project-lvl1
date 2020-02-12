@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const player
+const player;
 
 export default () => {
   console.log('Welcome to the Brain Games!');
@@ -8,3 +8,5 @@ export default () => {
   player = playerName;
   console.log(`Hello, ${playerName}!`);
 };
+
+export player;
