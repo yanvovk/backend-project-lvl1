@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: |
-          npm install eslint-config-airbnb-base
+          npm install babel-eslint eslint-plugin-import eslint-config-airbnb-base
           make lint
