@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const player;
+export const player
 
 export default () => {
   console.log('Welcome to the Brain Games!');
