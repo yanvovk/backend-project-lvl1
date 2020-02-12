@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { default as hello, player as playerName } from './index.js';
+import { hello, player as playerName } from './index.js';
 
 const randomNum = () => Math.floor(Math.random() * Math.floor(1000000000));
 
