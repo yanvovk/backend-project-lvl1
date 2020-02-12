@@ -11,18 +11,18 @@ const isEven = (num) => {
 export default () => {
   hello();
   console.log('Answer "yes" if the number is even, otherwise answer "no"')
-  for(let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < 3; i += 1) {
     const num = randomNum();
-    let rightAnswer = isEven(num);
+    const rightAnswer = isEven(num);
     console.log(`Question: ${num}`);
-    let playerAnswer = readlineSync.question('Your answer:');
-    if(playerAnswer !== rightAnswer) {
+    const playerAnswer = readlineSync.question('Your answer:');
+    if (playerAnswer !== rightAnswer) {
         console.log(`${playerAnswer} is wrong answer ;(. Correct answer was "${rightAnswer}".`);
         console.log(`Let's try again, ${playerName}!`);
         break;
     };
     console.log('Correct!');
-    if(i === 2) {
+    if (i === 2) {
         console.log(`Congratulations, ${playerName}`);
     };
   }
