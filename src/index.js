@@ -9,6 +9,5 @@ const hello = () => {
   console.log(`Hello, ${playerName}!`);
 };
 
-
 export default hello;
 export const player = playerName;
