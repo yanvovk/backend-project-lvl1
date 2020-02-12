@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { hello, player as playerName } from './index.js';
+import hello from './index.js';
 
 const randomNum = () => Math.floor(Math.random() * Math.floor(1000000000));
 
@@ -9,7 +9,7 @@ const isEven = (num) => {
 };
 
 export default () => {
-  hello();
+  const playerName = hello();
   console.log('Answer "yes" if the number is even, otherwise answer "no"');
   for (let i = 0; i < 3; i += 1) {
     const num = randomNum();
