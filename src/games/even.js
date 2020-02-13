@@ -2,7 +2,7 @@ import hello from '../index.js';
 import random from '../random.js';
 import run from '../run.js';
 
-const randomNum = random(10000);
+const randomNum = () => random(10000);
 
 const isEven = (num) => {
   const answer = { yes: 'yes', no: 'no' };
