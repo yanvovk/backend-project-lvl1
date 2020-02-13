@@ -1,6 +1,6 @@
-import hello from './index.js';
-import random from './random.js';
-import run from './run.js';
+import hello from '../index.js';
+import random from '../random.js';
+import run from '../run.js';
 
 const question = () => {
   const num = random(100);
