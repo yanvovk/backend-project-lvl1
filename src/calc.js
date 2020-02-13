@@ -7,13 +7,13 @@ const question = () => {
   const b = random(100);
   const operations = ['+', '*', '-'];
   const randOperator = operations[random(3)];
-  return `${a} ${randOperator} ${b};`;
+  return `${a} ${randOperator} ${b}`;
 };
 
 const rigthAnswer = (strExp) => {
   const operatorAndOperands = strExp.split(' ');
-  const first = operatorAndOperands[0];
-  const second = operatorAndOperands[2];
+  const first = Number(operatorAndOperands[0]);
+  const second = Number(operatorAndOperands[2]);
   const oper = operatorAndOperands[1];
   const functions = {
     '+': (a, b) => a + b,

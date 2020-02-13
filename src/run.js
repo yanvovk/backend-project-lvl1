@@ -6,7 +6,7 @@ export default (playerName, question, rigthAnswer) => {
     const r = rigthAnswer(q);
     console.log(`Question: ${q}`);
     const playerAnswer = readlineSync.question('Your answer:');
-    if (playerAnswer !== r) {
+    if (playerAnswer != r) {
       console.log(`${playerAnswer} is wrong answer ;(. Correct answer was "${r}".`);
       console.log(`Let's try again, ${playerName}!`);
       break;
