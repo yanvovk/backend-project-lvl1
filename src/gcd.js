@@ -17,7 +17,7 @@ const gcdFinder = (str) => {
       n %= m;
     } else {
       m %= n;
-    }  
+    }
   }
   const gcd = n + m;
   return gcd.toString();
