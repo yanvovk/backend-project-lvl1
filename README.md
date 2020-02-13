@@ -19,3 +19,7 @@ Playing Brain-gcd
 Playing Brain-progression
 ------
 [![asciicast](https://asciinema.org/a/ajfpJLcpCvWMTh7fVCPM4QB0W.svg)](https://asciinema.org/a/ajfpJLcpCvWMTh7fVCPM4QB0W)
+
+Playing Brain-prime
+------
+[![asciicast](https://asciinema.org/a/QZhvxW9sppl7jmoeVMfYERWaT.svg)](https://asciinema.org/a/QZhvxW9sppl7jmoeVMfYERWaT)
