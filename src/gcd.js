@@ -15,11 +15,12 @@ const gcdFinder = (str) => {
   while (n !== 0 && m !== 0) {
     if (n > m) {
       n %= m;
-    }
-    m %= n;
+    } else {
+      m %= n;
+    }  
   }
   const gcd = n + m;
-  return gcd;
+  return gcd.toString();
 };
 
 export default () => {
