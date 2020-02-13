@@ -20,7 +20,7 @@ const rigthAnswer = (strExp) => {
     '*': (a, b) => a * b,
     '-': (a, b) => a - b,
   };
-    return functions[oper](first, second);
+  return functions[oper](first, second);
 };
 
 export default () => {
