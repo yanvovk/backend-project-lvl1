@@ -11,3 +11,7 @@ Instailing and playing Brain-even
 Instailing and playing Brain-calc
 ------
 [![asciicast](https://asciinema.org/a/ZGoFVppMI4U2Ta8g3nuMZBtwp.svg)](https://asciinema.org/a/ZGoFVppMI4U2Ta8g3nuMZBtwp)
+
+Playing Brain-gcd
+------
+[![asciicast](https://asciinema.org/a/lpAAvnHmozzLAF10NqLwggcJg.svg)](https://asciinema.org/a/lpAAvnHmozzLAF10NqLwggcJg)
