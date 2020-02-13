@@ -12,12 +12,12 @@ const gcdFinder = (str) => {
   const [a, b] = str.split(' ');
   let n = Number(a);
   let m = Number(b);
-  while(n!== 0 && m !== 0) {
-    if(n > m) {
-      n = n % m;
+  while (n !== 0 && m !== 0) {
+    if (n > m) {
+      n %= m;
     }
-    m = m % n;
-  };
+    m %= n;
+  }
   const gcd = n + m;
   return gcd;
 };
@@ -27,4 +27,3 @@ export default () => {
   console.log('What is the result of the expression?');
   run(playerName, question, gcdFinder);
 };
-  
