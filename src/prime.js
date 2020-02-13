@@ -8,14 +8,14 @@ const question = () => {
 };
 
 const rigthAnswer = (num) => {
-  if(4 > num > 0) {
+  if (4 > num > 0) {
     return 'yes';
   }
-  if(num % 2 == 0 || num % 3 == 0) {
-    return 'no';  
+  if (num % 2 === 0 || num % 3 === 0) {
+    return 'no'; 
   }
   const sqrt = Math.sqrt(num);
-  for(let i = 5; i <= sqrt; i += 2) {
+  for (let i = 5; i <= sqrt; i += 2) {
     if (num % i === 0) {
       return 'no';
     }
