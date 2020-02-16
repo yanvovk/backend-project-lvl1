@@ -9,7 +9,7 @@ const question = (min = 0, max = 10) => {
   a = random(min, max);
   b = random(min, max);
   const operations = ['+', '*', '-'];
-  randOperator = operations[random(0, 3)];
+  randOperator = operations[random(0, operations.length)];
   return `${a} ${randOperator} ${b}`;
 };
 
