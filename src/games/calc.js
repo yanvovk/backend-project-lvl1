@@ -1,12 +1,11 @@
-import hello from '../index.js';
+import run from '../index.js';
 import random from '../random.js';
-import run from '../run.js';
 
-const question = () => {
-  const a = random(100);
-  const b = random(100);
+const question = (min = 0, max = 10) => {
+  const a = random(min, max);
+  const b = random(min, max);
   const operations = ['+', '*', '-'];
-  const randOperator = operations[random(3)];
+  const randOperator = operations[random(0, 3)];
   return `${a} ${randOperator} ${b}`;
 };
 
@@ -20,11 +19,10 @@ const rigthAnswer = (strExp) => {
     '*': (a, b) => a * b,
     '-': (a, b) => a - b,
   };
-  return functions[oper](first, second).toString();
+  return functions[oper](first, second);
 };
 
 export default () => {
-  const playerName = hello();
-  console.log('What is the result of the expression?');
-  run(playerName, question, rigthAnswer);
+  const task = 'What is the result of the expression?';
+  run(task, question, rigthAnswer);
 };

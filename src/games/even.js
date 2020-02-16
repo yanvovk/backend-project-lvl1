@@ -1,16 +1,13 @@
-import hello from '../index.js';
+import run from '../index.js';
 import random from '../random.js';
-import run from '../run.js';
 
-const randomNum = () => random(10000);
+const randomNum = (min = 0, max = 100) => random(min, max);
 
-const isEven = (num) => {
-  const answer = { yes: 'yes', no: 'no' };
-  return num % 2 > 0 ? answer.no : answer.yes;
-};
+const isEven = (num) => num % 2 > 0 ? false : true;
+
+const rigthAnswer = (num) => isEven(num)? 'yes' : 'no';
 
 export default () => {
-  const playerName = hello();
-  console.log('Answer "yes" if the number is even, otherwise answer "no"');
-  run(playerName, randomNum, isEven);
+  const task = 'Answer "yes" if the number is even, otherwise answer "no"';
+  run(task, randomNum, rigthAnswer);
 };

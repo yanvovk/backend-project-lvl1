@@ -1,30 +1,27 @@
-import hello from '../index.js';
+import run from '../index.js';
 import random from '../random.js';
-import run from '../run.js';
 
-const question = () => {
-  const num = random(100);
-  return num;
-};
+const randomNum = (min = 0, max = 100) => random(min, max);
 
-const rigthAnswer = (num) => {
+const isPrime = (num) => {
   if (num > 0 && num < 4) {
-    return 'yes';
+    return true;
   }
   if (num % 2 === 0 || num % 3 === 0) {
-    return 'no';
+    return false;
   }
   const sqrt = Math.sqrt(num);
   for (let i = 5; i <= sqrt; i += 2) {
     if (num % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 
+const rigthAnswer = (num) => isPrime(num) ? 'yes' : 'no';
+
 export default () => {
-  const playerName = hello();
-  console.log('What is the result of the expression?');
-  run(playerName, question, rigthAnswer);
+  const task = 'What is the result of the expression?';
+  run(task, randomNum, rigthAnswer);
 };
