@@ -23,6 +23,6 @@ const gcdFinder = () => {
 };
 
 export default () => {
-  const task = 'What is the result of the expression?';
+  const task = 'Find the greatest common divisor of given numbers.';
   run(task, question, gcdFinder);
 };
