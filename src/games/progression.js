@@ -25,7 +25,7 @@ const rigthAnswer = () => {
     answer = progression[1] - deltaG;
   } else {
     answer = progression[0] + deltaG * blankIndex;
-  }  
+  }
   return answer;
 };
 

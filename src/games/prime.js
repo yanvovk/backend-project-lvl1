@@ -19,7 +19,12 @@ const isPrime = (num) => {
   return true;
 };
 
-const rigthAnswer = (num) => isPrime(num) ? 'yes' : 'no';
+const rigthAnswer = (num) => {
+  if(isPrime(num)) {
+    return 'yes';
+  }
+  return 'no';
+}; 
 
 export default () => {
   const task = 'What is the result of the expression?';

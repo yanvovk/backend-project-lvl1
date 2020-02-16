@@ -3,9 +3,19 @@ import random from '../random.js';
 
 const randomNum = (min = 0, max = 100) => random(min, max);
 
-const isEven = (num) => num % 2 > 0 ? false : true;
+const isEven = (num) => {
+  if(num % 2 > 0) {
+    return false;
+  }
+  return true; 
+};
 
-const rigthAnswer = (num) => isEven(num)? 'yes' : 'no';
+const rigthAnswer = (num) => {
+  if(isEven(num)) {
+    return 'yes';
+  }
+  return 'no';
+}; 
 
 export default () => {
   const task = 'Answer "yes" if the number is even, otherwise answer "no"';
