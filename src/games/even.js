@@ -4,18 +4,18 @@ import random from '../random.js';
 const randomNum = (min = 0, max = 100) => random(min, max);
 
 const isEven = (num) => {
-  if(num % 2 > 0) {
+  if (num % 2 > 0) {
     return false;
   }
-  return true; 
+  return true;
 };
 
 const rigthAnswer = (num) => {
-  if(isEven(num)) {
+  if (isEven(num)) {
     return 'yes';
   }
   return 'no';
-}; 
+};
 
 export default () => {
   const task = 'Answer "yes" if the number is even, otherwise answer "no"';

@@ -20,11 +20,11 @@ const isPrime = (num) => {
 };
 
 const rigthAnswer = (num) => {
-  if(isPrime(num)) {
+  if (isPrime(num)) {
     return 'yes';
   }
   return 'no';
-}; 
+};
 
 export default () => {
   const task = 'What is the result of the expression?';
