@@ -27,6 +27,6 @@ const rigthAnswer = (num) => {
 };
 
 export default () => {
-  const task = 'What is the result of the expression?';
+  const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   run(task, randomNum, rigthAnswer);
 };
