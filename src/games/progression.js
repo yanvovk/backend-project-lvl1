@@ -30,6 +30,6 @@ const rigthAnswer = () => {
 };
 
 export default () => {
-  const task = 'What is the result of the expression?';
+  const task = 'What number is missing in the progression?';
   run(task, question, rigthAnswer);
 };
