@@ -15,9 +15,9 @@ const question = (min = 0, max = 10) => {
 
 const rigthAnswer = () => {
   const functions = {
-    '+': (a, b) => a + b,
-    '*': (a, b) => a * b,
-    '-': (a, b) => a - b,
+    '+': (n, m) => n + m,
+    '*': (n, m) => n * m,
+    '-': (n, m) => n - m,
   };
   return functions[randOperator](a, b);
 };
