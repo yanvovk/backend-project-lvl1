@@ -4,7 +4,7 @@ import random from '../random.js';
 const randomNum = (min = 0, max = 100) => random(min, max);
 
 const isPrime = (num) => {
-  if (num > 0 && num < 4) {
+  if (num > 1 && num < 4) {
     return true;
   }
   if (num % 2 === 0 || num % 3 === 0 || num === 1) {
