@@ -7,7 +7,7 @@ const isPrime = (num) => {
   if (num > 0 && num < 4) {
     return true;
   }
-  if (num % 2 === 0 || num % 3 === 0) {
+  if (num % 2 === 0 || num % 3 === 0 || num === 1) {
     return false;
   }
   const sqrt = Math.sqrt(num);
