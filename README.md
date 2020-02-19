@@ -30,7 +30,7 @@ Enter result of the expression.
 #### Brain-prime
 If given number is prime enter 'yes' otherwise enter 'no'.
 #### Brain-progression
-Enter missing element of the progression;
+Enter missing element of the progression.
  
 
 Instailing and playing Brain-even
