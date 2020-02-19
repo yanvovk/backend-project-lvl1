@@ -1,28 +1,28 @@
 import random from '../random.js';
 import run from '../index.js';
 
-let a = 0;
-let b = 0;
-
-const question = (min = 0, max = 100) => {
-  a = random(min, max);
-  b = random(min, max);
-  return `${a} ${b}`;
-};
-
-const gcdFinder = () => {
-  while (a !== 0 && b !== 0) {
-    if (a > b) {
-      a %= b;
-    } else {
-      b %= a;
+const task = (min = 0, max = 100) => {
+  const taskObj = {};
+  const a = random(min, max);
+  const b = random(min, max);
+  taskObj.question = `${a} ${b}`;
+  const gcdFinder = (m, n) => {
+    while (m !== 0 && n !== 0) {
+      if (m > n) {
+        m %= n;
+      } else {
+        n %= m;
+      }
     }
-  }
-  const gcd = a + b;
-  return gcd;
+    const gcd = m + n;
+    return gcd;
+  };
+  taskObj.rightAnswer = gcdFinder(a, b).toString();
+  return taskObj;
 };
+
+const question = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-  const task = 'Find the greatest common divisor of given numbers.';
-  run(task, question, gcdFinder);
+  run(question, task);
 };

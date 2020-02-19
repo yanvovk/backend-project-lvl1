@@ -1,28 +1,24 @@
 import run from '../index.js';
 import random from '../random.js';
 
-let a;
-let b;
-let randOperator;
-
-const question = (min = 0, max = 10) => {
-  a = random(min, max);
-  b = random(min, max);
+const task = (min = 0, max = 10) => {
+  const taskObj = {};
+  const a = random(min, max);
+  const b = random(min, max);
   const operations = ['+', '*', '-'];
-  randOperator = operations[random(0, operations.length)];
-  return `${a} ${randOperator} ${b}`;
-};
-
-const rigthAnswer = () => {
+  const randOperator = operations[random(0, operations.length - 1)];
+  taskObj.question = `${a} ${randOperator} ${b}`;
   const functions = {
     '+': (n, m) => n + m,
     '*': (n, m) => n * m,
     '-': (n, m) => n - m,
   };
-  return functions[randOperator](a, b);
+  taskObj.rightAnswer = functions[randOperator](a, b).toString();
+  return taskObj;
 };
 
+const question = 'What is the result of the expression?';
+
 export default () => {
-  const task = 'What is the result of the expression?';
-  run(task, question, rigthAnswer);
+  run(question, task);
 };

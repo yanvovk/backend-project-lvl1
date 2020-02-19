@@ -1,32 +1,40 @@
 import run from '../index.js';
 import random from '../random.js';
 
-const randomNum = (min = 0, max = 100) => random(min, max);
+const task = (min = 0, max = 100) => {
+  const taskObj = {};
+  const num = random(min, max);
+  taskObj.question = num;
 
-const isPrime = (num) => {
-  if (num > 1 && num < 4) {
-    return true;
-  }
-  if (num % 2 === 0 || num % 3 === 0 || num === 1) {
-    return false;
-  }
-  const sqrt = Math.sqrt(num);
-  for (let i = 5; i <= sqrt; i += 2) {
-    if (num % i === 0) {
+  const isPrime = (n) => {
+    if (n > 1 && n < 4) {
+      return true;
+    }
+    if (n % 2 === 0 || n % 3 === 0 || n === 1) {
       return false;
     }
-  }
-  return true;
+    const sqrt = Math.sqrt(n);
+    for (let i = 5; i <= sqrt; i += 2) {
+      if (n % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  };
+  
+  const right = (n) => {
+    if (isPrime(num)) {
+      return 'yes';
+    }
+    return 'no';
+  };
+
+  taskObj.rightAnswer = right(num);
+  return taskObj;
 };
 
-const rigthAnswer = (num) => {
-  if (isPrime(num)) {
-    return 'yes';
-  }
-  return 'no';
-};
+const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default () => {
-  const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  run(task, randomNum, rigthAnswer);
+  run(question, task);
 };
