@@ -25,6 +25,4 @@ const task = (min = 0, max = 100) => {
 
 const question = 'Find the greatest common divisor of given numbers.';
 
-export default () => {
-  run(question, task);
-};
+export default () => run(question, task);

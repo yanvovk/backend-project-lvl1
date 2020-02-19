@@ -23,6 +23,4 @@ const task = (min = 0, max = 100) => {
 
 const question = 'Answer "yes" if the number is even, otherwise answer "no"';
 
-export default () => {
-  run(question, task);
-};
+export default () => run(question, task);

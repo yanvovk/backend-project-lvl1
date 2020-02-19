@@ -19,6 +19,4 @@ const task = (len = 10, min = 0, max = 100) => {
 
 const question = 'What number is missing in the progression?';
 
-export default () => {
-  run(question, task);
-};
+export default () => run(question, task);

@@ -19,6 +19,4 @@ const task = (min = 0, max = 10) => {
 
 const question = 'What is the result of the expression?';
 
-export default () => {
-  run(question, task);
-};
+export default () => run(question, task);
