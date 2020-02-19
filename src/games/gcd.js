@@ -7,7 +7,7 @@ const task = (min = 0, max = 100) => {
   const b = random(min, max);
   taskObj.question = `${a} ${b}`;
   const gcdFinder = (m, n) => {
-    let c = m; 
+    let c = m;
     let d = n;
     while (c !== 0 && d !== 0) {
       if (c > d) {

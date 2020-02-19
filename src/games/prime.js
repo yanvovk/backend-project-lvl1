@@ -21,7 +21,7 @@ const task = (min = 0, max = 100) => {
     }
     return true;
   };
-  
+
   const right = (n) => {
     if (isPrime(n)) {
       return 'yes';
