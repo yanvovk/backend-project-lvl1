@@ -11,7 +11,11 @@ Get Started
 
 * Go into the directory
 
-`cd backend-project-lvl1 && npm install`
+`cd backend-project-lvl1`
+
+* Instailing
+
+`make install`
 
 * Linking
 
