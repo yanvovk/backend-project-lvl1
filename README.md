@@ -21,7 +21,7 @@ Get Started
 
 `sudo npm link`
 
-* To play the game enter its lowercase name
+* To start the game enter its lowercase name
 
 `brain-even`
 
