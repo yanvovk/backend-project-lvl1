@@ -7,14 +7,16 @@ const task = (min = 0, max = 100) => {
   const b = random(min, max);
   taskObj.question = `${a} ${b}`;
   const gcdFinder = (m, n) => {
-    while (m !== 0 && n !== 0) {
-      if (m > n) {
-        m %= n;
+    let c = m; 
+    let d = n;
+    while (c !== 0 && d !== 0) {
+      if (c > d) {
+        c %= d;
       } else {
-        n %= m;
+        d %= c;
       }
     }
-    const gcd = m + n;
+    const gcd = c + d;
     return gcd;
   };
   taskObj.rightAnswer = gcdFinder(a, b).toString();

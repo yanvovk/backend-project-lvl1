@@ -12,7 +12,7 @@ const task = (min = 0, max = 100) => {
   const num = random(min, max);
   taskObj.question = num;
   const right = (n) => {
-    if (isEven(num)) {
+    if (isEven(n)) {
       return 'yes';
     }
     return 'no';
