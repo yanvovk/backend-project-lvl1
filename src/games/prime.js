@@ -28,7 +28,7 @@ const generateTask = () => {
   const num = random(minForRandom, maxForRandom);
   task.question = num;
   const answerRightly = (n) => (isPrime(n) ? 'yes' : 'no');
-  task.rightAnswer = right(num);
+  task.rightAnswer = answerRightly(num);
   return task;
 };
 
