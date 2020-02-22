@@ -5,14 +5,11 @@ const isPrime = (n) => {
   if (n === 2 || n === 3) {
     return true;
   }
-  if (n % 2 === 0 || n % 3 === 0) {
-    return false;
-  }
-  if(n < 2) {
+   if (n % 2 === 0 || n < 2) {
     return false;
   }
   const sqrt = Math.sqrt(n);
-  for (let i = 5; i <= sqrt; i += 2) {
+  for (let i = 3; i <= sqrt; i += 2) {
     if (n % i === 0) {
       return false;
     }
