@@ -21,14 +21,11 @@ const minForRandom = 0;
 const maxForRandom = 100;
 
 const generateTask = () => {
-  const task = {};
-  const num = random(minForRandom, maxForRandom);
-  task.question = num;
-  const answerRightly = (n) => (isPrime(n) ? 'yes' : 'no');
-  task.rightAnswer = answerRightly(num);
-  return task;
+  const question = random(minForRandom, maxForRandom);
+  const rightAnswer = (isPrime(question) ? 'yes' : 'no');
+  return {question, rightAnswer};
 };
 
-const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export default () => run(question, generateTask);
+export default () => run(description, generateTask);

@@ -7,14 +7,11 @@ const minForRandom = 0;
 const maxForRandom = 100;
 
 const generateTask = () => {
-  const task = {};
-  const num = random(minForRandom, maxForRandom);
-  task.question = num;
-  const answerRightly = (n) => (isEven(n) ? 'yes' : 'no');
-  task.rightAnswer = answerRightly(num);
-  return task;
+  const question = random(minForRandom, maxForRandom);
+  const rightAnswer = (isEven(question) ? 'yes' : 'no');
+  return {question, rightAnswer};
 };
 
-const question = 'Answer "yes" if the number is even, otherwise answer "no"';
+const description = 'Answer "yes" if the number is even, otherwise answer "no"';
 
-export default () => run(question, generateTask);
+export default () => run(description, generateTask);

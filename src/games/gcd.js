@@ -19,14 +19,13 @@ const minForRandom = 0;
 const maxForRandom = 100;
 
 const generateTask = () => {
-  const task = {};
   const a = random(minForRandom, maxForRandom);
   const b = random(minForRandom, maxForRandom);
-  task.question = `${a} ${b}`;
-  task.rightAnswer = gcdFinder(a, b).toString();
-  return task;
+  const question = `${a} ${b}`;
+  const rightAnswer = gcdFinder(a, b).toString();
+  return {question, rightAnswer};
 };
 
-const question = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
-export default () => run(question, generateTask);
+export default () => run(description, generateTask);

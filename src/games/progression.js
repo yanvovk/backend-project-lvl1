@@ -16,11 +16,11 @@ const generateTask = () => {
   }
   const answer = progression[blankIndex];
   progression[blankIndex] = '..';
-  task.question = progression.toString().replace(/,/g, ' ');
-  task.rightAnswer = answer.toString();
-  return task;
+  const question = progression.toString().replace(/,/g, ' ');
+  const rightAnswer = answer.toString();
+  return {question, rightAnswer};
 };
 
-const question = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
-export default () => run(question, generateTask);
+export default () => run(description, generateTask);
