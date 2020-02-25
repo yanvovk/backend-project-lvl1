@@ -23,7 +23,7 @@ const maxForRandom = 100;
 const generateTask = () => {
   const question = random(minForRandom, maxForRandom);
   const rightAnswer = (isPrime(question) ? 'yes' : 'no');
-  return {question, rightAnswer};
+  return { question, rightAnswer };
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';

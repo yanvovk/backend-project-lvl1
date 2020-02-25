@@ -17,9 +17,9 @@ const generateTask = () => {
   const randOperator = operators[random(0, operators.length - 1)];
   const question = `${a} ${randOperator} ${b}`;
   const rightAnswer = operations[randOperator](a, b).toString();
-  return {question, rightAnswer};
+  return { question, rightAnswer };
 };
 
 const description = 'What is the result of the expression?';
 
-export default () => run(qdescription, generateTask);
+export default () => run(description, generateTask);

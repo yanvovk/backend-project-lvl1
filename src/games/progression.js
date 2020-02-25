@@ -18,7 +18,7 @@ const generateTask = () => {
   progression[blankIndex] = '..';
   const question = progression.toString().replace(/,/g, ' ');
   const rightAnswer = answer.toString();
-  return {question, rightAnswer};
+  return { question, rightAnswer };
 };
 
 const description = 'What number is missing in the progression?';

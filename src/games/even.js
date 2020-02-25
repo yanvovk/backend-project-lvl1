@@ -9,7 +9,7 @@ const maxForRandom = 100;
 const generateTask = () => {
   const question = random(minForRandom, maxForRandom);
   const rightAnswer = (isEven(question) ? 'yes' : 'no');
-  return {question, rightAnswer};
+  return { question, rightAnswer };
 };
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no"';

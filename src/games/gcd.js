@@ -23,7 +23,7 @@ const generateTask = () => {
   const b = random(minForRandom, maxForRandom);
   const question = `${a} ${b}`;
   const rightAnswer = gcdFinder(a, b).toString();
-  return {question, rightAnswer};
+  return { question, rightAnswer };
 };
 
 const description = 'Find the greatest common divisor of given numbers.';
