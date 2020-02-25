@@ -6,7 +6,6 @@ const maxForRandom = 100;
 const progressionLength = 10;
 
 const generateTask = () => {
-  const task = {};
   const first = random(minForRandom, maxForRandom);
   const delta = random(0, 10);
   const blankIndex = random(0, progressionLength - 1);

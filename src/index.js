@@ -7,7 +7,7 @@ export default (taskText, generateTask) => {
   console.log(`Hello, ${playerName}!`);
   console.log(taskText);
   for (let i = 0; i < roundCounter; i += 1) {
-    const {question, rightAnswer} = generateTask();
+    const { question, rightAnswer } = generateTask();
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer:');
     if (playerAnswer !== rightAnswer) {
